@@ -1,0 +1,15 @@
+{% extends 'CRUD/crud_base.html' %}
+{% block titulo %}CRUD - Crear usuario{% endblock %}
+{% block cabecera %}Creando usuario{% endblock %}
+{% block contenido %}
+    <form method="post" action="#" id="formulario">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <div class="form-row">
+            <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
+            <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
+        </div>
+    </form>
+    {{ mensaje }}
+{% endblock %}

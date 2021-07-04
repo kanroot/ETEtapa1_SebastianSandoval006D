@@ -1,0 +1,17 @@
+{% extends 'CRUD/crud_base.html' %}
+{% block titulo %}CRUD - Modificar usuario{% endblock %}
+{% block cabecera %}Modificar usuario{% endblock %}
+{% block contenido %}
+    <form method="post" action="#" id="formulario">
+        {% csrf_token %}
+
+        <div class="form-row">
+            {{ form.as_table}}
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-danger" id="enviar" value="Modificar">
+            <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
+        </div>
+    </form>
+    {{ mensaje }}
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titulo %}Caos News{% endblock %}
+{% block contenido %}
+<!-- sección 1: bienvenida -->
+<div class="divider"></div>
+<div class="container section">
+    <h3 class="center-align tituloParrafo">Caos news</h3>
+    <p class="flow-text textoJustificado">
+        Somos un grupo de periodistas independientes, cansados de los medios de comunicaciones tradicionales que no
+        siempre informan con la verdad, hemos tomado la desición de crear un nuevo medio de comunicación llamado “Caos news”.
+    </p>
+</div>
+<!-- fin bienvenida -->
+<!-- inicio destacados -->
+<div class="divider"></div>
+<div class="container section">
+    <h5 class="center-align">Noticias más relevantes:</h5>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 m12 l12 x12">
+
+            <div class="carousel carousel-slider center">
+                <div class="carousel-fixed-item center">
+                    <a class="btn-floating btn-large waves-effect waves-light red pulse" href="{% url 'noticias.html' %}">
+                        <i class="material-icons">push_pin</i>
+                    </a>
+                </div>
+                <div class="carousel-item" style="overflow: hidden;" href="#one! ">
+                    <img alt="carrusel war 1" class="fotoCarrusel" src="{% static 'img/destacado/war.jpg' %}">
+                </div>
+                <div class="carousel-item" style="overflow: hidden;" href="#one!">
+                    <img alt="carrusel war 2" class="fotoCarrusel" src="{% static 'img/destacado/war2.jpg' %}">
+                </div>
+                <div class="carousel-item" style="overflow: hidden;" href="#one!">
+                    <img alt="carrusel war 3" class="fotoCarrusel" src="{% static 'img/destacado/war3.jpg' %}">
+                </div>
+            </div>
+            <br>
+            <div class="carousel carousel-slider center">
+                <div class="carousel-fixed-item center">
+                    <a class="btn-floating btn-large waves-effect waves-light red pulse" href="{% url 'noticias.html' %}">
+                        <i class="material-icons">push_pin</i>
+                    </a>
+                </div>
+                <div class="carousel-item" style="overflow: hidden;" href="#one!">
+                    <img alt="carrusel hong-kong 3" class="fotoCarrusel" src="{% static 'img/destacado/hong-kong-protests3.jpg' %}">
+                </div>
+                <div class="carousel-item" style="overflow: hidden;" href="#one!">
+                    <img alt="carrusel hong-kong 2" class="fotoCarrusel" src="{% static 'img/destacado/hong-kong-protests2.jpg' %}">
+                </div>
+                <div class="carousel-item" style="overflow: hidden;" href="#one!">
+                    <img alt="carrusel hong-kong 1" class="fotoCarrusel" src="{% static 'img/destacado/hong-kong-protests.jpg' %}">
+                </div>
+            </div>
+            <br>
+            <div class="carousel carousel-slider center">
+                <div class="carousel-fixed-item center">
+                    <a class="btn-floating btn-large waves-effect waves-light red pulse" href="{% url 'noticias.html' %}">
+                        <i class="material-icons">push_pin </i>
+                    </a>
+                </div>
+                <div class="carousel-item" style="overflow: hidden;" href="#one!">
+                    <img alt="mcafee 1" class="fotoCarrusel" src="{% static 'img/destacado/mcafee1.jpg' %}">
+                </div>
+                <div class="carousel-item" style="overflow: hidden;" href="#one!">
+                    <img alt="mcafee 2" class="fotoCarrusel" src="{% static 'img/destacado/mcafee2.jpg' %}">
+                </div>
+                <div class="carousel-item" style="overflow: hidden;" href="#one!">
+                    <img alt="mcafee 3" class="fotoCarrusel" src="{% static 'img/destacado/mcafee3.jpg' %}">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
+<!-- fin destacados -->
+
+{% endblock %}

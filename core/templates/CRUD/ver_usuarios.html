@@ -1,0 +1,45 @@
+{% extends 'CRUD/crud_base.html' %}
+{% block titulo %}CRUD - Ver todos los usuarios{% endblock %}
+{% block cabecera %}Ver usuarios{% endblock %}
+{% block contenido %}
+    <div class="row right">
+        <a href="{% url 'crear_usuario.html' %}" class="right btn-floating  waves-effect waves-light green">
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+         <table class="responsive-table highlight">
+            <thead>
+                <tr>
+                    <th scope="col">RUT</th>
+                    <th scope="col">Primer Nombre</th>
+                    <th scope="col">Apellido Paterno</th>
+                    <th scope="col">Dirección</th>
+                    <th scope="col">Telefono</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for user in users%}
+                    <tr>
+                        <td>{{user.rut}}</td>
+                        <td>{{user.primerNombre}}</td>
+                        <td>{{user.apellidoPaterno }}</td>
+                        <td>{{user.direccion }}</td>
+                        <td>{{user.telefono }}</td>
+
+                        <td>
+                            <a href="{% url 'modificar_usuario.html'  user.rut%}" class="btn-floating waves-effect waves-light">
+                                <i class="material-icons">edit</i>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="{% url 'eliminar_usuario'  user.rut%}" class="btn-floating waves-effect waves-light red">
+                                <i class="material-icons">clear</i>
+                            </a>
+                        </td>
+                    </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+{% endblock %}
+
+

@@ -1,0 +1,194 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titulo %}Caos news{% endblock %}
+{% block contenido %}
+<!-- comienzo del contenido -->
+<div class="parallax-container">
+    <div class="row">
+        <div class="container col s8 m8 l8 xl8 parallaxContent">
+            <h5 class="nombrePerfil"><strong>@AsukaNemu</strong></h5>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <div class="container col s12 m12 l12 xl12 parallaxContent">
+                <h1 class="center">Guerra en el donbass</h1>
+            </div>
+        </div>
+    </div>
+    <div class="parallax"><img alt="banner" src="{% static 'img/galeria/1_ucranian.jpg' %}"></div>
+</div>
+
+<!--  inicio galeria -->
+<div class="container section">
+    <h5 class="left-align">Publicaciones:</h5>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 m12 l4 xl4">
+             {%for user in users%}
+             {%endfor%}
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed responsive-img" alt="foto galería 1"
+                         src="{% static 'img/galeria/2_ucranian.jpg' %}">
+                </div>
+                <div class="card-content pink">
+                    <span class="card-title activator grey-text text-darken-4 center-align">Happy!<i
+                            class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal pink">
+                    <span class="card-title grey-text text-darken-4">Happy!<i
+                            class="material-icons right">close</i></span>
+                    <p>今年の春は心地よいです🌸.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4 xl4">
+            <div class="card">
+                <div class="card-image yellow">
+                    <img class="materialboxed responsive-img" alt="foto galería 2"
+                         src="{% static 'img/galeria/3_ucranian.jpg' %}">
+                </div>
+                <div class="card-content yellow">
+                    <span class="card-title activator grey-text text-darken-4 center-align">???<i
+                            class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal yellow">
+                        <span class="card-title grey-text text-darken-4">???<i
+                                class="material-icons right">close</i></span>
+                    <p>雨に濡れる桜はとても綺麗で幸せでした</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4 xl4">
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed responsive-img" alt="foto galería 3"
+                         src="{% static 'img/galeria/4_ucranian.jpg' %}">
+                </div>
+                <div class="card-content deep-purple">
+                    <span class="card-title activator grey-text text-darken-4 center-align">photo time!<i
+                            class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal deep-purple">
+                    <span class="card-title grey-text text-darken-4">photo time!<i
+                            class="material-icons right">close</i></span>
+                    <p>好きって言われるとすぐ信じてしまう癖治したいです。.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4 xl4">
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed responsive-img" alt="foto galería 4"
+                         src="{% static 'img/galeria/5_ucranian.jpg' %}">
+                </div>
+                <div class="card-content lime darken-1">
+                    <span class="card-title activator grey-text text-darken-4 center-align">nemu<i
+                            class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal lime darken-1">
+                        <span class="card-title grey-text text-darken-4">nemu<i
+                                class="material-icons right">close</i></span>
+                    <p>襟足頑張って伸ばしたから褒めて。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4 xl4">
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed responsive-img" alt="foto galería 5"
+                         src="{% static 'img/galeria/6_ucranian.jpg' %}">
+                </div>
+                <div class="card-content orange">
+                    <span class="card-title activator grey-text text-darken-4 center-align">Punpun❤️<i
+                            class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal orange">
+                        <span class="card-title grey-text text-darken-4">Punpun❤️<i
+                                class="material-icons right">close</i></span>
+                    <p>もうすぐバレンタインなので鬱
+                        誰かチョコいる？.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col s12 m12 l4 xl4">
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed responsive-img" alt="foto galería 6"
+                         src="{% static 'img/galeria/7_ucranian.jpg' %}">
+                </div>
+                <div class="card-content blue-grey">
+                    <span class="card-title activator grey-text text-darken-4 center-align">❤️<i
+                            class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal blue-grey">
+                        <span class="card-title grey-text text-darken-4">❤️<i
+                                class="material-icons right">close</i></span>
+                    <p>髪伸びすぎたから来週切る。
+
+                        ウルフのままだけど🙌
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4 xl4">
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed responsive-img" alt="foto galería 7"
+                         src="{% static 'img/galeria/8_ucranian.jpg' %}">
+                </div>
+                <div class="card-content red lighten-2">
+                    <span class="card-title activator grey-text text-darken-4 center-align">可愛い<i
+                            class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal red lighten-2">
+                        <span class="card-title grey-text text-darken-4">可愛い<i
+                                class="material-icons right">close</i></span>
+                    <p>タレ目にしてリベンジしました。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4 xl4">
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed responsive-img" alt="foto galería 8"
+                         src="{% static 'img/galeria/9_ucranian.jpg' %}">
+                </div>
+                <div class="card-content blue lighten-1">
+                    <span class="card-title activator grey-text text-darken-4 center-align">パッツン✂️<i
+                            class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal blue lighten-1">
+                    <span class="card-title grey-text text-darken-4">パッツン✂️<i
+                            class="material-icons right">close</i></span>
+                    <p>最近唇厚いのにまたハマった。.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m12 l4 xl4">
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed responsive-img" alt="foto galería 9"
+                         src="{% static 'img/galeria/10_ucranian.jpg' %}">
+                </div>
+                <div class="card-content purple accent-2">
+                    <span class="card-title activator grey-text text-darken-4 center-align">🚬<i
+                            class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal purple accent-2">
+                        <span class="card-title grey-text text-darken-4">🚬<i
+                                class="material-icons right">close</i></span>
+                    <p>久しぶりに映画見てた。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- fin destacados -->
+
+{% endblock %}

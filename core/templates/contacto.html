@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block titulo %}PinWin - Contacto{% endblock %}
+{% block contenido %}
+<div class="divider"></div>
+<div class="container section">
+    <h3 class="center-align">Contáctanos</h3>
+    <p class="flow-text center-align">
+        Porque en PinWin sabemos que tus dudas o sugerencias son importantes, comunícate con nosotros
+    </p>
+    <div class="container section">
+        <div class="row">
+            <div class="row card-panel">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">mail</i>
+                                <input id="email" placeholder="Ingresa tu Email" type="email"
+                                       class="validate" required>
+                                <label for="email">Email</label>
+                                <span class="helper-text" data-error="Email Inválido"></span>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">account_box</i>
+                                <input placeholder="Ingrese nombre" id="nombre" type="text"
+                                       class="validate" maxlength="32"
+                                       required="" aria-required="true"
+                                       pattern="[A-Za-z]{3,32}">
+                                <label for="nombre">Nombre</label>
+                                <span class="helper-text" data-error="Nombre Inválido"></span>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">account_box</i>
+                                <input placeholder="Ingrese Apellido" id="apellido" type="text"
+                                       class="validate" maxlength="32"
+                                       required="" aria-required="true"
+                                       pattern="[A-Za-z]{3,32}">
+                                <label for="apellido">Apellido</label>
+                                <span class="helper-text" data-error="Apellido Inválido"></span>
+                            </div>
+                            <div class="input-field col s12">
+                                <select id="categoria" required="" aria-required="true">
+                                    <option value="1">Reclamos</option>
+                                    <option value="2">Dudas</option>
+                                    <option value="3">Sugerencias</option>
+                                </select>
+                                <label for="categoria">Categoría</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">create</i>
+                                <textarea id="textarea1" class="materialize-textarea validate"
+                                          maxlength="300" required></textarea>
+                                <label for="textarea1">Ingrese su mensaje </label>
+                            </div>
+                            <br>
+                            <div class="center-align">
+                                <button class="btn red lighten-2" type="Submit" id="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
