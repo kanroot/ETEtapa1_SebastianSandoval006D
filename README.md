@@ -3,6 +3,8 @@ Instrucciones
 Obtener el proyecto
 
 git clone https://github.com/kanroot/ETEtapa1_SebastianSandoval006D.git
+
+
 Instalar dependencias
 
 pip install -r requirements.txt
