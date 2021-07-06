@@ -8,6 +8,8 @@ git clone https://github.com/kanroot/ETEtapa1_SebastianSandoval006D.git
 Instalar dependencias
 
 pip install -r requirements.txt
+
+
 Configurar conexión a base de datos.
 <BR>
 En el archivo settings.py ubicado Etepa1_SebastianSandoval
